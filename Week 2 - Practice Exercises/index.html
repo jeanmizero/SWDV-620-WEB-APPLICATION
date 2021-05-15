@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Practice Exercises</title>
+</head>
+<body>
+    <!-- A four-column table -->
+    <table width = 700px border = 3 cellpadding = 2 >
+        <tr align = center >
+            <th colspan="5" ><h2>Four-column table</h2></th>
+        </tr>
+        <tr align = center>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year</th>
+            <th>Links</th>
+        </tr>
+        <tr align="right">
+            <td>Developing Business Applications for the Web</td>
+            <td>Christian Hur and Laura Ubelhor</td>
+            <td>April 21, 2017</td>
+            <td><a href="https://www.amazon.com/Developing-Business-Applications-Web-JavaScript/dp/1583473483">Link</a></td>
+        </tr>
+    </table>
+    <!-- A Web form -->
+    <h2>Web form</h2>
+    <form method = "post" action="submit.php">
+        <fieldset>
+            <legend>User information</legend>
+            <label for="userName">Username</label>
+            <input type="text" name = "userName" id = "userName" required ="required">
+            <br>
+            <label for="pwd">Password</label>
+            <input type="text" password = "password" id = "pwd" required ="required">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Comments</legend>
+            <textarea name="comments" id="comments" cols="48" rows="4"></textarea>
+        </fieldset>
+        <input type="reset" class = "formButton" value="Clear">
+        <input type="submit" class = "formButton" value="Submit">
+    </form>   
+</body>
+</html>
