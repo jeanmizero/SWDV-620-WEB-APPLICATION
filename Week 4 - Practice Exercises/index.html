@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - Practice Exercise</title>
+</head>
+<body>
+    <!-- 1. Write a script to prompt for a username and password. -->
+    <script type = "text/javascript">
+        document.write("Welcome  !!" + "<br>" )
+        let username = prompt("Enter your username" );
+        let password = prompt("Enter a valid password");
+        if ((username == "jean") && (password == "jean")){
+            document.write("Thanks for Login!" +"<br>");
+        }
+        else{
+            document.write("Invalid username or password!");
+        }
+    //**********************************************************//
+        // 2. Provide a list of objects that can be used in Javascript and provide an example of each.
+        // a. String object method
+        let myName = "Jean"
+        // toLowerCase(): displays a string in all lower case
+        document.write(myName.toLowerCase()+ "<br>");
+        // b. String date method
+        let myLocalDayTime = new Date();// today's date and time
+        document.write("My local Time in Utah is" + " "+ myLocalDayTime + "<br>");
+        // c. Math objects
+        // The Math.pow() function returns the base to the exponent power, as in base^exponent.
+        document.write("Seven power of two: "+ " "+ Math.pow(7,2) +"<br>" );
+    //***************************************************************//
+      // 3.  Choose a Javascript event and provide a code example.
+       // The onclick event generally occurs when the user clicks on an element
+      function changeColor() {
+        document.getElementById("test").style.color = "red";
+    } 
+    </script>
+
+    <button id="test" onclick = "changeColor()">Click to change text color.</button>
+   
+</body>
+</html>
